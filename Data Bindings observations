@@ -1,0 +1,122 @@
+//TODO 1
+gradle app
+
+android {
+  ...
+  dataBinding {
+      enabled true
+  }
+}
+
+//TODO 2
+Adicionando a tag <layout> na raiz dos layouts
+
+
+//TODO 3
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="br.com.wellingtoncosta.databinding.playground.ui.list.ListContactsViewModel" />
+
+    </data>
+...
+
+outro exemplo
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+   <data>
+       <variable name="person" type="com.example.Person"/>
+   </data>
+
+
+
+//TODO 4
+
+
+binding de metodos
+android:onClick="@{() -> viewModel.startNewContactActivity()}"
+app:onRefreshListener="@{() -> viewModel.listAll()}"
+app:refreshing="@{safeUnbox(viewModel.isLoading)}"
+
+
+android:text="@{user.name}"
+android:text="@{user.email}"
+
+binding de dados
+android:text="@={contact.email}"
+android:text="@={contact.phone}"
+
+//TODO 5
+codigo
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+   super.onCreate(savedInstanceState);
+   MainActivityBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+   Person person = new person("Test", "Person");
+   binding.setPerson(person);
+}
+
+outro exemplo
+
+private lateinit var binding: ActivityMainBinding
+private val myName: MyName = MyName("Fabio Hideki")
+
+override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_data_binding)
+
+        binding.myName = myName
+
+        binding.btDone.setOnClickListener {
+            addNickname(it)
+        }
+
+
+    }
+
+     private fun addNickName(view: View) {
+
+        binding.apply {
+            binding.tvTextview2.text = nicknameEdit.text
+            binding.nicknameEdit.visibility = View.GONE
+            btButton.visibility = View.GONE
+            tvTextview2.visibility = View.VISIBLE
+        }
+
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
+
+    }
+
+outro exemplo
+     private fun addNickname(it: View?) {
+
+
+        binding.apply {
+
+            myName?.nickname = etNickName.text.toString()
+            // Invalidate all binding expressions and request a new rebind to refresh UI
+            invalidateAll()
+        }
+
+    }
+
+expressions
+
+android:text="@{String.valueOf(index + 1)}"
+android:visibility="@{age > 13 ? View.GONE : View.VISIBLE}"
+android:transitionName='@{"image_" + id}'
+
+The null coalescing operator (??) chooses the left operand if it isn't null or the right if the former is null.
+
+android:text="@{user.displayName ?? user.lastName}"
+
+
+

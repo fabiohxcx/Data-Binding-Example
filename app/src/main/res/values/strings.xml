@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="yellow_star">yellow star</string>
+    <string name="loren">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis, quam a lobortis
+        elementum, sapien velit lobortis arcu, sed placerat sapien eros eu magna. Vivamus sed metus justo. Vestibulum
+        vitae sollicitudin lorem. Maecenas dapibus nisi tellus, vel suscipit magna hendrerit eu. Duis ac libero augue.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sed risus
+        rhoncus, condimentum nulla at, venenatis turpis. Morbi diam est, posuere eget dui at, fringilla aliquam elit.
+        Aenean luctus est laoreet urna scelerisque, eget sollicitudin lectus maximus. Phasellus tincidunt ornare
+        vehicula. Phasellus at magna vitae justo bibendum tempus a eu tortor. Morbi massa ex, interdum id lectus vel,
+        facilisis cursus velit. Donec eget ligula ac eros efficitur sagittis vitae eu augue. Nam sit amet ex sapien.
+        Proin hendrerit ornare congue. Etiam hendrerit ante at lacus eleifend porttitor at id erat.
+
+        Cras ultrices nulla eget scelerisque tincidunt. Mauris consequat tortor vitae tortor euismod blandit.
+        Pellentesque vehicula efficitur vestibulum. Nunc eleifend blandit nibh, non vehicula lacus bibendum id.
+        Curabitur ac luctus tortor. Cras lacinia neque convallis neque consectetur, et maximus augue scelerisque. Nullam
+        sed dignissim tortor. Pellentesque eu dapibus orci. Cras in sollicitudin ligula, ac dictum ex. Mauris ac turpis
+        imperdiet, auctor nulla imperdiet, viverra justo. Phasellus eget risus a lorem tincidunt commodo nec vel orci.
+        Fusce dictum aliquet tortor sit amet viverra. Maecenas et mollis arcu, a pretium mi. Suspendisse laoreet ipsum a
+        massa tristique vestibulum. Aliquam at vulputate velit. Fusce pharetra nisl sit amet enim scelerisque, eu
+        lacinia purus vulputate.
+
+        Sed nec volutpat sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. Aliquam convallis nisi a augue bibendum scelerisque. Ut in lobortis tellus, id tristique mi. Aenean
+        id ligula sodales, mollis lorem quis, faucibus velit. Nulla viverra est sapien, eu euismod enim pulvinar in.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque sit amet
+        aliquet dolor, ac gravida dui. Donec tortor eros, mattis quis mi nec, blandit sagittis libero.
+
+
+    </string>
+    <string name="done">Done</string>
+</resources>
